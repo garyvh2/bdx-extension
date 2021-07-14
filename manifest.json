@@ -1,0 +1,26 @@
+{
+  "name": "BDX Live Extension",
+  "description": "BDX Dev tools",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "./assets/bdx-16.png",
+    "48": "./assets/bdx-48.png",
+    "128": "./assets/bdx-128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "scripting",
+    "activeTab",
+    "unlimitedStorage"
+  ]
+}
